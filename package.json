@@ -1,0 +1,22 @@
+{
+  "name": "stillness",
+  "version": "0.1.0",
+  "description": "Immutable manipulation helpers to aid in nested state updates.",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "babel --out-dir dist src",
+    "test": "mocha --compilers js:babel/register",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "author": "Leonardo Andres Garcia Crespo <leoasis@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.8.3",
+    "expect": "^1.8.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
